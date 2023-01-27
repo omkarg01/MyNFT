@@ -10,8 +10,9 @@ const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
 
 console.log(JSON.stringify(contract.abi));
 
-const contractAddress = "0x11B9587169782Fa08c64083556Efe7A0802D9C52";
+const contractAddress = "0x442b457F3beECD972A13f67A42e753a2499A277F";
 const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
+// console.log(nftContract.methods)
 //create transaction
 async function mintNFT(tokenURI) {
     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest"); //get latest nonce
@@ -51,5 +52,5 @@ async function mintNFT(tokenURI) {
         });
 }
 mintNFT(
-    "https://gateway.pinata.cloud/ipfs/QmR9cmeToyY7paebR5F2CYyoPKq7CjJN33onExP2KtJTvU"
+    "https://gateway.pinata.cloud/ipfs/QmYu9BWcNueQPW3y4uLpoNoJfbguNYoBwGPpAgWBt2SYd1"
 );
