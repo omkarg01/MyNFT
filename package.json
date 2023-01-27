@@ -17,7 +17,7 @@
     "hardhat": "^2.12.6"
   },
   "dependencies": {
-    "@alch/alchemy-web3": "^1.1.8",
+    "@alch/alchemy-web3": "^1.4.7",
     "@openzeppelin/contracts": "^4.3.3",
     "dotenv": "^10.0.0"
   }
